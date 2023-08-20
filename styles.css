@@ -601,3 +601,195 @@ li {
   pointer-events: none;
   transition: opacity 300ms;
 }
+.modal-description {
+  width: 360px;
+  color: var(--navyblue, #2e2f42);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-top: 72px;
+  margin-left: 24px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.button-submit {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  font-family: inherit;
+  display: flex;
+  padding: 16px 32px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 24px;
+}
+.button-submit:hover,
+.button-submit:focus {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.form-label {
+  color: var(--lightslate, #8e8f99);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+  margin-left: 24px;
+}
+label {
+}
+.input-wrapper input:not([type="checkbox"]) {
+  border: none;
+}
+.input-wrapper input:not([type="checkbox"]):focus {
+  outline: none;
+}
+.input-wrapper {
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  background-color: inherit;
+  padding: 8px;
+  width: 360px;
+  height: 40px;
+  margin-left: 24px;
+}
+.input-wrapper > input {
+  flex-grow: 1;
+}
+.input-wrapper:focus-within {
+  border-color: #4d5ae5;
+}
+
+.input-wrapper > use:focus {
+  color: #4d5ae5;
+}
+.input-wrapper--alt {
+  position: relative;
+}
+.icon--alt {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  translate: 0 -50% 0;
+}
+.input-wrapper--alt input {
+  width: 100%;
+  padding-block: 8px;
+  padding-inline-start: 32px;
+}
+.checkbox {
+  margin-left: 24px;
+  margin-top: 16px;
+}
+.privacy {
+  margin-top: 16px;
+  margin-left: 8px;
+  color: var(--lightslate, #8e8f99);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
+}
+.privacy > a {
+  color: var(--iris, #4d5ae5);
+  text-decoration: underline;
+}
+.privacy > a:hover,
+.privacy > a:focus {
+  background-color: inherit;
+}
+.border {
+  stroke-width: 1px;
+  stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+}
+textarea {
+  width: 360px;
+  height: 120px;
+  margin-top: 4px;
+  color: #2e2f4266;
+  background-color: #ffff;
+}
+textarea:hover,
+textarea:focus {
+  background-color: #ffff;
+}
+.subscribe {
+  color: var(--white-background, #fff);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  margin: 0px;
+  margin-bottom: 16px;
+  margin-left: 80px;
+}
+.newsletter {
+  background-color: inherit;
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--white, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white, #ffff);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  margin-left: 80px;
+}
+.subscribes-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  font-family: inherit;
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 4px;
+  margin-left: 24px;
+  margin-top: 40px;
+  max-height: 40px;
+}
+.subscribes-button:hover,
+.subscribes-button:focus {
+  background-color: #404bbf;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
