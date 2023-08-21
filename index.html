@@ -403,7 +403,7 @@
   </div>
   <button class="subscribes-button">Subscribe
     <svg width="24px" height="24px">
-      <use href="./images/modal.svg#icon-Frame-3">
+      <use href="./images/modal.svg#icon-Frame">
       </use>
     </svg>
   </button>
@@ -418,7 +418,7 @@
       <label class="form-label" for="username" >
         Name</label>
         <div class="input-wrapper">
-          <span>
+          <span class="icon-modal">
             <svg width="18px" height="18px">
               <use href="./images/modal.svg#icon-person-black"></use>
             </svg>
@@ -428,9 +428,9 @@
         <label class="form-label" for="phone">
           Phone</label>
           <div class="input-wrapper">
-            <span>
+            <span class="icon-modal">
               <svg width="18px" height="24px">
-                <use href="./images/modal.svg#icon-phone-black"></use>
+                <use  href="./images/modal.svg#icon-phone-black"></use>
               </svg>
             </span>
           <input type="tel" name="phone"/>
@@ -438,9 +438,9 @@
         <label class="form-label" for="email">
           Email</label>
           <div class="input-wrapper">
-            <span>
+            <span class="icon-modal">
               <svg width="18px" height="24px">
-                <use href="./images/modal.svg#icon-email-black"></use>
+                <use  href="./images/modal.svg#icon-email-black"></use>
               </svg>
               </span>
           <input type="email" name="email">
@@ -451,11 +451,19 @@
         </label>
       </fieldset>
       <div class="checkbox">
+        
         <input name="tc" type="checkbox" width="16px" height="16px"/>
-        <label class="privacy">I accept the terms and conditions of the <a href="#">Privacy Policy</a>
+        <span class="checkbox-fake">
+          <svg width="16px" height="16px">
+            <use href="./images/modals.svg#icon-Checkbox"></use>
+          </svg>
+        </span>
+        <span class="privacy">I accept the terms and conditions of the <a href="#">Privacy Policy</a></span>
+    
         </div>
-        <button class="button-submit" type="submit">Send</button>
       </form>
+        <button class="button-submit" type="submit">Send</button>
+      
     <button class="modal-close" data-modal-close>
       <svg width="8px" height="8px">
         <use href="./images/close-button.svg#icon-close-button"></use>
