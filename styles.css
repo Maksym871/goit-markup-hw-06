@@ -619,7 +619,7 @@ li {
   flex-direction: column;
   gap: 12px;
 }
-.button-submit {
+.button-send {
   color: #ffffff;
   background-color: #4d5ae5;
   font-size: 16px;
@@ -634,6 +634,7 @@ li {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   margin-top: 24px;
 }
 .button-submit:hover,
@@ -751,7 +752,7 @@ li {
   stroke-width: 1px;
   stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
-textarea {
+.comment-text {
   position: relative;
   width: 360px;
   height: 120px;
@@ -763,9 +764,10 @@ textarea {
   padding-left: 16px;
   padding-top: 8px;
 }
-textarea:focus {
+.comment-text:hover,
+:focus {
   background-color: #ffff;
-  border: 1px solid #4d5ae5;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
 .subscribe {
   color: var(--white-background, #fff);
