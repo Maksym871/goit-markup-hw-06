@@ -731,7 +731,6 @@ li {
   left: 0;
 }
 .privacy {
-  margin-top: 16px;
   margin-left: 8px;
   color: var(--lightslate, #8e8f99);
   font-family: Roboto;
