@@ -635,6 +635,9 @@ li {
   align-items: center;
   text-align: center;
   margin-top: 24px;
+  margin-left: 119px;
+  margin-right: 120px;
+  margin-bottom: 24px;
 }
 .button-submit:hover,
 .button-submit:focus {
@@ -703,18 +706,32 @@ li {
   padding-block: 8px;
   padding-inline-start: 32px;
 }
-.checkbox {
+.check-privacy label {
   margin-left: 24px;
   margin-top: 16px;
+  position: relative;
 }
-input[type="checkbox"] {
+.ch-box {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.hiden {
   appearance: none;
 }
 .checkbox-fake {
   color: #fff;
 }
-input:checked + .fake-checkbox {
-  background-color: blue;
+.checkbox-fake:checked + .fake-checkbox {
+  background-color: var(--ocean);
+}
+.check-icon {
+  position: absolute;
+  fill: var(--white);
+  padding: 4px 3px;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
 }
 .privacy {
   margin-top: 16px;
@@ -748,6 +765,8 @@ textarea {
   background-color: #ffff;
   resize: none;
   border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 8px;
 }
 textarea:focus {
   background-color: #ffff;
