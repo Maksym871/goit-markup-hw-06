@@ -613,6 +613,7 @@ li {
   letter-spacing: 0.32px;
   margin-top: 72px;
   margin-left: 24px;
+  margin-bottom: 8px;
 }
 .form {
   display: flex;
@@ -660,12 +661,15 @@ li {
   line-height: 14px;
   letter-spacing: 0.48px;
   margin-left: 24px;
+  margin-bottom: -4px;
 }
 .input-wrapper input:not([type="checkbox"]) {
   border: none;
 }
 .input-wrapper input:not([type="checkbox"]):focus {
   outline: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-wrapper {
   display: flex;
@@ -682,6 +686,8 @@ li {
 }
 .input-wrapper:focus-within {
   border-color: #4d5ae5;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-wrapper:focus-within .icon-modal {
@@ -704,9 +710,13 @@ li {
   padding-block: 8px;
   padding-inline-start: 32px;
 }
+.check-privacy {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
 .check-privacy label {
   margin-left: 24px;
-  margin-top: 16px;
   position: relative;
 }
 .modal-check-text {
@@ -714,17 +724,17 @@ li {
   align-items: center;
 }
 .modal-check:checked + .modal-check-text span {
-  background-color: var(--ocean);
+  background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
 }
 .check-icon {
   position: absolute;
   fill: var(--white);
-  padding: 4px 3px;
   border-radius: 4px;
   top: 0;
   left: 0;
+  border: 1px solid rgba(46, 47, 66, 0.4);
 }
 .modal-check-icon {
   display: inline-flex;
@@ -734,6 +744,7 @@ li {
   margin-right: 8px;
   align-items: center;
   justify-content: center;
+  fill: transparent;
   transition: background-color 250ms, cubic-bezier(0.4, 0, 0.2, 1), border 250ms,
     cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -753,13 +764,14 @@ li {
 .privacy > a:hover,
 .privacy > a:focus {
   background-color: inherit;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .border {
   stroke-width: 1px;
   stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
 }
 .comment-text {
-  position: relative;
   width: 360px;
   height: 120px;
   margin-top: 4px;
@@ -772,8 +784,10 @@ li {
 }
 
 .comment-text:focus-within {
-  background-color: #ffff;
-  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  border: 1px solid var(--pressed-state, #4d5ae5);
+  outline: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe {
   color: var(--white-background, #fff);
