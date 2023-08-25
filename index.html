@@ -397,11 +397,11 @@
     <p class="subscribe">Subscribe</p>
     <form>
       <label>
-        <input class="newsletter" type="email" name="email" placeholder="E-mail"/>
+        <input class="newsletter" type="email" name="email" placeholder="E-mail" required/>
       </label>
     </form>
   </div>
-  <button class="subscribes-button">Subscribe
+  <button class="subscribes-button"><span a href="#">Subscribe</span>
     <svg width="24px" height="24px">
       <use href="./images/modal.svg#icon-Frame">
       </use>
@@ -423,7 +423,7 @@
               <use href="./images/modal.svg#icon-person-black"></use>
             </svg>
           </span>
-        <input type="text" name="username"/>
+        <input type="text" name="username" required/>
       </div>
         <label class="form-label" for="phone">
           Phone</label>
@@ -433,7 +433,7 @@
                 <use  href="./images/modal.svg#icon-phone-black"></use>
               </svg>
             </span>
-          <input type="tel" name="phone"/>
+          <input type="number" name="phone" required/>
         </div>
         <label class="form-label" for="email">
           Email</label>
@@ -443,7 +443,7 @@
                 <use  href="./images/modal.svg#icon-email-black"></use>
               </svg>
               </span>
-          <input type="email" name="email">
+          <input type="email" name="email" required>
       </div>
         <label class="form-label">
           Comment
@@ -452,7 +452,7 @@
       </fieldset>
 
       <div class="check-privacy">
-        <input class="modal-check visually-hidden" name="tc" type="checkbox" id="user-privacy" width="16px" height="16px"/>
+        <input class="modal-check visually-hidden" name="tc" type="checkbox" id="user-privacy" width="16px" height="16px" required/>
         
         <label for="user-privacy" class="modal-check-text">
           <span class="modal-check-icon">
