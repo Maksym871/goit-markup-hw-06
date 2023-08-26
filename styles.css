@@ -62,7 +62,6 @@ ol {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .header-wrapper {
   display: flex;
@@ -727,6 +726,9 @@ li {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
+}
+.modal-check:required {
+  margin-left: 32px;
 }
 .check-icon {
   position: absolute;
